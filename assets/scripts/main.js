@@ -133,9 +133,6 @@ function createRecipeCards() {
     // then we'll grab the 'page-name' from it - in this case it will be 'ghostCookies'
     const page = recipeData[recipes[i]]['page-name'];
     router.addPage(page, function () {
-      if(i > 2){
-        document.querySelector('.section--recipe-expand').classList.add('hidden');
-      }
 
       document.querySelector('.section--recipe-cards').classList.remove('shown');
       document.querySelector('.section--recipe-expand').classList.add('shown');
